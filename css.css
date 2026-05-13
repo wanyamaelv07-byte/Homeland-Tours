@@ -61,7 +61,6 @@ input[type=submit]:hover {
 
 
 .row:after {
-  content: "";
   display: table;
   clear: both;
 }
@@ -156,7 +155,6 @@ input[type=submit]:hover {
     line-height:1.6;
 }
 
-/*MAIN CONTAINER*/
 .container{
     display: flex;
     gap: 30px;
