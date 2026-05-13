@@ -183,6 +183,9 @@ input[type=submit]:hover {
     .hamburger{
         display:flex;
     }
+    .body{
+        padding: 10px;
+    }
     .container{
         flex-direction: column;
     }
@@ -202,6 +205,17 @@ input[type=submit]:hover {
         display:none;
     }
 
+    .nav ul{
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    .h1 {
+        font-size: 1.8rem;
+    }
+    .h2 {
+        font-size: 1.3rem;
+    }
     .nav-links.active{
         display:flex;
     }
@@ -219,9 +233,14 @@ input[type=submit]:hover {
 .container{
     display: flex;
     gap: 30px;
-    padding: 20px;
+    
 }
-
+.container, .about, .content{
+    width: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 /*SIDEBARS*/
 .left-sidebar,
 .right-sidebar{
@@ -290,6 +309,10 @@ button{
     width: 190px;
     height: 180px;
     border-radius: 10px;
+}
+.img{
+    max-width: 100%;
+    height: auto;
 }
 
 /*RIGHT SIDEBAR LINKS*/
