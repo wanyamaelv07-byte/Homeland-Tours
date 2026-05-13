@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Wanyama Elvis">
+        <title>Home</title>
+        <link rel="stylesheet" href="./design/css.css">
+        
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">Homeland Tours</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- HAMBURGER -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <!--LEFT SIDEBAR-->
+            <aside class="left-sidebar">
+                <h2>Advertisements</h2>
+                <div class="ad-box">
+                    <a href="#">Hotel Discounts
+                        <img src="./Images/MWEYA-SAFARI-LODGE-1000x550-1 (1).jpg" alt="Mweya Safari Lodge" width="200px" height="200px">
+                    </a>
+                </div>
+                <div class="ad-box">
+                    <a href="#">Packages
+                        <img src="./Images/Tanzani-Wildlife-tour.jpg" alt="Safari tour" width="200px" height="200px">
+                    </a>
+                </div>
+                <div class="ad-box">
+                    <a href="#">Insurance
+                        <img src="./Images/R.jpg" alt="Travel Insurance" width="200px" height="200px">
+                    </a>
+                </div>
+            </aside>
+
+            <!--MAIN CONTENT-->
+            <main>
+                <div class="main-box">
+                    <h2>Welcome to Uganda</h2>
+                    <p>
+                        Come and explore with us the beautiful nature of a country Uganda which has got a variety of ammusements which are eye 
+                        catching of which we have water bodies, mountains, platations, buildings, culture, and many more. Turn up and book with 
+                        us so that you can enjoy your leisure time.
+                    </p>
+                    
+                </div>
+
+                <!--PARTNERS-->
+                <div class="partners">
+                    <h2>Our partners</h2>
+                    <div class="partner-images">
+                        <img src="./Images/cropped-uwa.png" alt="Uganda Wildlife Authority">
+                        <img src="./Images/association-of-uganda-tour-operators-auto-logo.jpg" alt="Assiciation of Uganda Tour Opperators">
+                        <img src="./Images/Ministry-of-Tourism-Wildlife-and-Antiquities.jpg" alt="Ministry of Tourism Wildlife and Antiquities">
+                        <img src="./Images/images.png" alt="Uganda Tourism Board">
+                        <img src="./Images/images.png" alt="The Uganda Association of Travel Agents">
+                    </div>
+                </div>
+            </main>
+            
+            <!--RIGHT SIDEBAR-->
+            <aside class="right-sidebar">
+                <h2>Choose a palce with us</h2>
+                <ul>
+                    <li><a href="#">Lake Bunyonyi
+                        <img src="./Images/L. Bunyonyi.jpg" alt="L. Bunyoyi" width="200px" height="200px">
+                    </a></li>
+                    <li><a href="#">Murchsion Falls
+                        <img src="./Images/Murchsion-falls.jpg falls.jpg" alt="Murchsion falls" width="200px" height="200px">
+                    </a></li>
+                    <li><a href="#">Bwindi Forest
+                        <img src="./Images/Bwindi.webp" alt="Bwindi Forest" width="200px" height="200px">
+                    </a></li>
+                    
+                </ul>
+            </aside>
+        </div>
+
+        <footer>
+            <p>&copy;2026 Homeland Tours. Come and tour with us</P>
+        </footer>
+        <script>
+            /* HAMBURGER MENU */
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("navLinks");
+
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        </script>
+    </body>
+</html>

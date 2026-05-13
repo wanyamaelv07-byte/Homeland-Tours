@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Wanyama Elvis">
+        <title>Contact</title>
+        <link rel="stylesheet" href="./design/css.css">
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">Homeland Tours</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- HAMBURGER -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="simple">
+            <h2>Contact Us</h2>
+            <p>Come and tour with us or leave us a message</p>
+            <div class="containers">
+                    <div class="row">
+                        <form method="post" action="">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required="required">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="required">
+                            <label for="country">Country</label>
+                            <select id="country" name="country" required="required">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required="required"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+            </div><br>
+            <p><h3>Contact us also via:</h3><br>Email: homelandtours@gmail.com<br>Phone: +256 788 523548</p>
+        </div>
+
+        <footer>
+            <p>&copy;2026 Homeland Tours. Come and tour with us</P>
+        </footer>
+        <script>
+            /* HAMBURGER MENU */
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("navLinks");
+
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        </script>
+    </body>
+</html>

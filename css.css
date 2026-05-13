@@ -1,0 +1,326 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-image: url(./sunrise.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 200vh;
+    height: 140vh;
+}
+
+/* NAVBAR */
+header{
+    background:#222;
+    color:white;
+    padding:15px 20px;
+}
+
+.navbar{
+    display:flex; 
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.containers {
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* NAV LINKS */
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#00bcd4;
+}
+
+/* HAMBURGER */
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:25px;
+    height:3px;
+    background:white;
+    margin:4px;
+    transition:0.3s;
+}
+
+/* HERO SECTION */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-image: url(south-african-national-park.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#222;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#222;
+}
+
+/* ABOUT SECTION */
+.about{
+    padding:60px 20px;
+    text-align:center;
+    background:white;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media(max-width:768px){
+
+    .hamburger{
+        display:flex;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .left-sidebar,
+    .right-sidebar{
+        width: 100px;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        right:0;
+        background:#222;
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+        display:none;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:20px 0;
+    }
+
+    .hero-content h1{
+        font-size:35px;
+    }
+}
+
+/*MAIN CONTAINER*/
+.container{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+/*SIDEBARS*/
+.left-sidebar,
+.right-sidebar{
+    width: 20%;
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*ADS*/
+.ad-box{
+    background: #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/*MAIN CONTENT*/
+.main{
+    flex: 1;
+}
+.main-box{
+    background: #ffffffdd;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-box h2{
+    margin-bottom: 15px;
+}
+
+.main-box p{
+    margin-bottom: 20px;
+}
+
+/*BUTTONS*/
+button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*PARTNERS*/
+.partners{
+    background: #ffffffdd;
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.partner-images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.partner-images img{
+    width: 190px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+/*RIGHT SIDEBAR LINKS*/
+.right-sidebar ul{
+    list-style: none;
+}
+
+.right-sidebar a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background: #eee;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/*FOOTER*/
+footer{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/*SIMPLE*/
+.simple{
+    background: #ffffffdd;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+}
