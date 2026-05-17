@@ -31,6 +31,7 @@
                 We organize tourism adventures across Uganda with comfortable travel experiences and affordable packages.
             </p>
         </div>
+        <button onclick="topPage()">Top</button>
         <footer>
             <p>© 2026 Homeland Tours. All rights reserved.</p>
         </footer>
@@ -43,6 +44,13 @@
             hamburger.addEventListener("click", () => {
                 navLinks.classList.toggle("active");
             });
+            
+            function topPage() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
         </script>
     </body>
 </html>
